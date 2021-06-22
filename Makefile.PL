@@ -30,10 +30,11 @@ my %WriteMakefileArgs = (
     "File::Spec" => 0,
     "Test::More" => "0.96",
     "lib" => 0,
-    "utf8" => 0
+    "utf8" => 0,
+    "version" => 0
   },
   # "VERSION" => "0.110",
-  "VERSION" => "0.109_01",
+  "VERSION" => "0.109_02",
   "test" => {
     "TESTS" => "t/*.t"
   }
