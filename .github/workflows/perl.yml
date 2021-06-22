@@ -31,4 +31,4 @@ jobs:
 
       - name: Run tests with Perl 5.8.9
         run: |
-          docker run -v `pwd`:/root/workdir -w /root/workdir perl:5.8.9 bash -c "cpanm PerlIO::utf8_strict Sub::Exporter Test::More && perl MakeFile.PL && make && make test && make install"
+          docker run -v `pwd`:/root/workdir -w /root/workdir perl:5.8.9 bash -c "cpanm PerlIO::utf8_strict Sub::Exporter Test::More && perl Makefile.PL && make && make test && make install"
