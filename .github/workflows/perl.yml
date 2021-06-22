@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
       - name: Run tests
         run: |
-          docker run perl:5.34.0 bash -c "prove"
+          docker run -v `pwd`:/root/workdir -w /root/workdir perl:5.34.0 bash -c "prove"
