@@ -7,6 +7,9 @@ use 5.006;
 use Carp ();
 Carp::confess "not meant to be loaded";
 
+use version;
+our $VERSION = version->parse('0.108_01');
+
 =head1 DESCRIPTION
 
 It's boring to deal with opening files for IO, converting strings to

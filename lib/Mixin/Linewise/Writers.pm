@@ -15,6 +15,9 @@ use Sub::Exporter -setup => {
   },
 };
 
+use version;
+our $VERSION = version->parse('0.108_01');
+
 =head1 SYNOPSIS
 
   package Your::Pkg;
